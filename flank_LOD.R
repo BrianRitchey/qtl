@@ -18,7 +18,7 @@ flank_LOD <-
     chr <- x$Chromosome[1]
     for(i in 1:nrow(x)){
   	    z <- find.flanking(cross, chr = chr, pos = x$Position[i])
-              z[] <- lapply(z, as.character)
+      z[] <- lapply(z, as.character)
     	  z <- unname(z)                 
    	    z <- unlist(z)   # perform those operations to convert factor to char
     	  z <- z[3]  
@@ -32,8 +32,8 @@ flank_LOD <-
 
 
 
-
-# flank_LOD example.
+# flank_LOD example:
+#
 # flank_LOD_chr1 <- flank_LOD(load_CE_chr1_genes, 
 #                             cross = peggy_chol_all_data, 
 #                             result = load_CE.hk)
