@@ -1,3 +1,5 @@
+# QTL_genes function
+#
 # written by Brian Ritchey.
 # Used in conjunction with R/qtl package.
 # Returns genes in a QTL interval based on "Mouse_Genome", which is Mouse Genome Build 37 available from BioMart. 
