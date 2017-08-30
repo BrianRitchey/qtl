@@ -5,8 +5,8 @@
 # Returns poisiton LOD score of nearest flanking marker after a scanone analysis has been performed. 
 # Utilizes R/qtl's "find.flanking" funciton.
 # Aguments: x - should contain a data frame of gene chromosome and Mb position.
-            cross - the object of class cross used for R/qtl analysis.
-            results - the result of a scanone analysis stored as an object in your workspace.
+#            cross - the object of class cross used for R/qtl analysis.
+#            results - the result of a scanone analysis stored as an object in your workspace.
 
 
 
