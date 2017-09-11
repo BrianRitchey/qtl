@@ -4,14 +4,13 @@
 #
 # Returns gene name, their chromosome location, their position (in Mb), their protein description, distance from peak,... 
 # and number of pubmed hits for term(s) of interest 
-
+# First run QTL_genes...required for this function
 
 QTL_summary <- 
   function(bayes, chr, pos1, pos2, search_term){ 
   require(rentrez)
   require(pubmed_count)
-  require(QTL_genes)
-
+  
     o <- QTL_genes(bayes, chr, pos1, pos2) 
       if(!missing(bayes)){
         o <- o[,c(3,1,2,4,5)]   # Rearrange columns so gene name is first
